@@ -1,0 +1,904 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>Theme bds</title>
+	<!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css" >
+     <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="css/animate.css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/animate.js"></script>
+	<!--import-->
+<nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-xs-8 col-sm-6 col-md-2 text-center logo">
+					<img src="img/logo.png" alt="logo">
+				</div>
+				<a href="#" id="pull"><img src="img/nav-icon.png" alt="nav"></a>	
+				<div class="col-md-8">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href=".">Trang chủ</a></li>
+						<li><a href="#gioithieu">Giới thiệu</a></li>
+						<li><a href="#phankhu">Phân khu</a></li>
+						<li><a href="#sanpham">Biệt thự</a></li>
+						<li><a href="javascript:void(0)">Vị trí</a></li>
+						<li><a href="#tienich">Tiện ích</a></li>
+						<li><a href="javascript:void(0)">Tin tức</a></li>
+						<li><a href="#lienhe">Liên hệ</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-md-2 text-center sdt">
+					<p class="text-uppercase">hotline</p>
+					<p><strong>0167. 7667. xxx</strong></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<script>
+	$(document).ready(function(){
+        var lastScroll=0;
+        $(window).scroll(function(){
+        	var nowScroll=$(this).scrollTop();
+            if(nowScroll<lastScroll && nowScroll != 0){
+            	$('#goTop').addClass('goTop');
+             	$('nav').addClass('fixed');
+            }else{
+            	$('#goTop').removeClass('goTop');
+            	$('nav').removeClass('fixed');
+            }
+            	lastScroll=nowScroll;
+            });
+        // ////////////////
+        $('#pull').click(function(){
+        	if($('.navbar-nav').hasClass('mClick')){
+        		$('.navbar-nav').removeClass('mClick');
+        	}
+        	else{
+        		$('.navbar-nav').addClass('mClick');
+        	}
+        });
+    });
+</script>
+<div id="header-slide" class="carousel slide" data-ride="carousel">
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="img/slide1.jpg" alt="slide">
+			<div class="carousel-caption">
+			</div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a class="left carousel-control" href="#header-slide" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#header-slide" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+<div class="gioithieu module" id="gioithieu">
+	<!--<img src="img/bg1.jpg" alt="bg" style="width: 50%; position: relative;">-->
+	<div class="container">
+		<div class="row">
+			<div class="item item1 col-md-6">
+				<div class="title text-center">
+					<h2 class="text-uppercase">hình ảnh dự án</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<div id="gioithieu-slide" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/img1.jpg" alt="slide">
+							<div class="carousel-caption">
+							</div>
+						</div>
+					</div>
+					<!-- Controls -->
+					<a class="left carousel-control" href="#gioithieu-slide" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#gioithieu-slide" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+			<div class="item item2 col-md-6">
+				<div class="title text-center">
+					<h2 class="text-uppercase">tổng quan dự án</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<div class="content">
+					<p>Vinhomes Riverside The Harmony là phân khu mới nhất thuộc tổng thể khu độ thị sinh thái đẳng cấp duy nhất giữa lòng Hà Nội – Vinhomes Riverside. Không chỉ kế thừa giá trị cốt lõi của tổng thể khu đô thị Vinhomes Riverside, Vinhomes Riverside The Harmony còn sở hữu các phong cách kiến trúc đa dạng và hệ thống tiện ích vượt trội, hứa hẹn sẽ trở thành nơi an cư lý tưởng của những chủ nhân tinh hoa.</p><br>
+					<p>Tổng diện tích: 97,6 ha</p><br>
+					<p>Diện tích công viên và hồ điều hòa: Rộng 12,4ha</p><br>
+					<p>Mật độ xây dựng: 21%</p><br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--gioithieu-->
+<div class="module2 module">
+	<div class="container">
+		<div class="row">
+			<div class="item item3 col-md-6">
+				<div class="title text-center">
+					<h2 class="text-uppercase">vị trí cửa ngõ</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<div class="content">
+					<p>Vinhomes Riverside được xây dựng trên địa giới của 3 phường trung tâm quận Long Biên: Việt Hưng, Phúc Lợi và Giang Biên. Từ dự án, cư dân có thể kết nối linh hoạt với trung tâm Hà Nội cũng như di chuyển đến các tỉnh lân cận như, Hải Dương, Hải Phòng, Hưng Yên, Bắc Ninh…bằng hệ thống giao thông đường bộ, đường cao tốc trên cao hiện đại.</p>
+					<p>Cách Hồ Hoàn Kiếm 6,5km</p>
+					<p>Cách siêu thị Aeon Mall 1km</p>
+					<p>Cách công viên IT PARK 800m</p>
+					<p>Cách sân bay long biên 700m</p>
+					<p>Tiện di chuyển đến các tỉnh lân cận như, Hải Dương, Hải Phòng, Hưng Yên, Bắc Ninh..</p>
+				</div>
+			</div>
+			<div class="item item4 col-md-6">
+				<img src="img/map.png" alt="map">
+			</div>
+		</div>
+	</div>
+</div>
+<!--gioithieu2-->
+<div class="phankhu module" id="phankhu">
+	<div class="container">
+		<div class="row">
+			<div class="title text-center">
+				<h2 class="text-uppercase">Phân khu vinhomes</h2>
+				<img src="img/line.png" alt="line">
+			</div>
+			<p class="text-center">Mang ý nghĩa về thành phố lãng mạn bên sông, Vinhomes Riverside The Harmony hay còn có tên gọi đầy nghệ thuật Vinhomes Riverside The Harmony chính là bản giao hưởng tuyệt vời giữa thiên nhiên và con người. Dạo bước vào khu đô thị, bạn sẽ có những cảm nhận chân thật nhất về một miền xanh thuần khiết, được lạc vào thế giới của những loài hoa đẹp nhất dọc mỗi con đường.</p>
+			<div class="same-content">
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Phân khu-->
+<div class="sanpham module" id="sanpham">
+	<div class="container">
+		<div class="row">
+			<div class="title text-center">
+				<h2 class="text-uppercase">Sản phẩm vinhomes</h2>
+				<img src="img/line.png" alt="line">
+			</div>
+			<div class="same-content">
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div><div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div><div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--sản phẩm-->
+<div class="tienich module" id="tienich">
+	<div class="container">
+		<div class="row">
+			<div class="title text-center">
+				<h2 class="text-uppercase">Tiện ích 5 sao</h2>
+				<img src="img/line.png" alt="line">
+			</div>
+			<div class="content">
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--tiện ích-->
+<div class="module2 module" id="lienhe">
+	<div class="container">
+		<div class="row">
+			<div class="md-left text-center col-sm-6 col-md-6">
+				<div class="title text-center">
+					<h2 class="text-uppercase">Đăng ký nhận thông tin</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<p>Tải ngay bộ tài liệu Vinhomes The Harmony chính thức từ chủ đầu tư Vinhomes bao gồm mặt bằng tổng thể, mặt bằng căn hộ, hình ảnh căn hộ mẫu, bảng giá, hợp đồng mẫu.</p>
+				<form>
+			        <div class="form-group">
+			            <input type="email" class="form-control text-center" placeholder="Họ và Tên">
+			        </div>
+			        <div class="form-group">
+			            <input type="password" class="form-control text-center" placeholder="Email">
+			        </div>
+			        <div class="form-group">
+			            <input type="password" class="form-control text-center" placeholder="Phone">
+			        </div>
+			        <button type="submit" class="btn btn-primary">Đăng Ký Ngay</button>
+			    </form>
+		    </div>
+		    <div class="md-right text-center col-sm-6 col-md-6">
+		    	<div class="title text-center">
+					<h2 class="text-uppercase">bảng giá và chính sách bán hàng</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<p>Vinhomes Riverside The Harmony có đầy đủ thông tin về mặt bằng – chính sách – giá bán. Quý khách vui lòng liên hệ bộ phận Kinh doanh Vinhomes The Harmony để được cung cấp thông tin nhanh nhất</p>
+				<p><b>Hỗ trợ tư vấn chuyên sâu - cập nhật những thông tin mới nhất:</b></p>
+				<p><b>Hotline hỗ trợ khách hàng : 0986.989.626</b></p>
+		    </div>
+		</div>
+	</div>
+</div>
+<!--module2-->
+<div class="uuthe module">
+	<div class="container">
+		<div class="row">
+			<div class="title text-center">
+				<h2 class="text-uppercase">6 ƯU THẾ NỔI BẬT CỦA VINHOMES THE HARMONY</h2>
+				<img src="img/line.png" alt="line">
+			</div>	
+			<div class="content col-md-12">
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderbottom borderright paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-snowflake-o" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">vị trí vượng lộc đắc tài</strong>
+						<p>Tọa lạc tại cửa ngõ phía đông bắc Thủ đô, Vinhomes Riverside là một trong những khu đô thị sinh thái có vị trí đẹp và tiện lợi. Từ đây có thể dễ dàng kết nối linh hoạt với các cụm công trình trọng điểm của thành phố.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderbottom paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-superpowers" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">khu đô thị sông thái sông nước</strong>
+						<p>Được quy hoạch trên diện tích 183,5 ha, Vinhomes Riverside có mật độ xây dựng lý tưởng khi dành tới 60 ha cho không gian chung (cây xanh, công viên, mặt nước) và gần 50 ha cho hạ tầng giao thông</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderbottom borderright paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">phong thủy vượng lộc đắc tài</strong>
+						<p>Các khu biệt thự được bố trí trên những “bán đảo” nhân tạo, xen kẽ giữa vườn cây trải rộng và được ôm trọn bởi hệ thống kênh đào xanh mát. Đây chính là thế đất “vượng lộc – đắc tài”, mang tới vận hội tốt đẹp.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderbottom paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-ship" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">giá trị cuộc sống hoàn hảo nhất</strong>
+						<p>Là cư dân Vinhomes Riverside, đồng nghĩa với quyền thưởng thức phong cách sống đỉnh cao ngay bên hiên nhà mình: khu mua sắm, khu thể thao, hệ thống trường học,vui chơi giải trí vui chơi giải trí…</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderright paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-gg" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">cộng đồng dân cư trí thức cao</strong>
+						<p>Dù mới đi vào vận hành khoảng 4 năm nhưng Vinhomes Riverside giai đoạn 1 đã hình thành cộng đồng cư dân văn minh, thân thiện và năng động.Riverside thành điểm đến lý tưởng cho các hoạt động văn hóa lớn.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-internet-explorer" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">chủ đầu tư uy tín tiềm lực mạnh</strong>
+						<p>Vinhomes Riverside được kiến tạo bởi chủ đầu tư Vingroup – thương hiệu số 1 Việt Nam về BĐS và là tập đoàn có chiến lược phát triển bền vững và năng động, có tiềm lực hội nhập quốc tế để vươn lên tầm khu vực và thế giới.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--uuthe-->
+<a class="btninfo btnsdt">
+	<div class="nd">
+		<strong class="text-uppercase">hotline</strong>
+		<p>0167. 7667. 020</p>
+	</div>
+	<div class="icon">
+		<i class="fa fa-phone" aria-hidden="true"></i>
+	</div>
+	
+</a>
+<a class="btninfo btndown">
+	<div class="nd">
+		<strong class="text-uppercase">download</strong>
+		<p>Tài liệu</p>
+	</div>
+	<div class="icon">
+		<i class="fa fa-arrow-down" aria-hidden="true"></i>
+	</div>
+	
+</a>
+<a class="btninfo btnin">
+	<div class="nd">
+		<strong class="text-uppercase">info</strong>
+		<p>Thông Tin</p>
+	</div>
+	<div class="icon">
+		<i class="fa fa-info" aria-hidden="true"></i>
+	</div>
+	
+</a>
+<footer class="module">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-md-4 item1">
+				<h3 class="text-uppercase">lý do chọn chúng tôi</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				<p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting</p>
+				<p>remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+			</div>
+			<div class="col-sm-4 col-md-4 item2 text-center">
+				<h3 class="text-uppercase">đơn vị bán hàng</h3>
+				<img src="img/logo.png" alt="logo">
+				<p class="text-left">Địa chỉ: Tân Thới Nhất, Q12, HCM</p>
+				<p class="text-left">SĐT: 0167. 7667. xxx</p>
+				<p class="text-left">Email: Calhvoldemort@gmail.com</p>
+			</div>
+			<div class="col-sm-4 col-md-4 item3">
+				<h3 class="text-uppercase">bản đồ dự án</h3>
+				<img src="img/map2.jpg" alt="map">
+			</div>
+			<div class="col-sm-12 col-md-12">
+				<p>Copyright &copy 2018, Design by Ace</p>
+				<a class="go goTop" id="goTop" title="Đến đầu trang" onclick="$('html,body').animate({scrollTop:0})"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>Theme bds</title>
+	<!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css" >
+     <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="css/animate.css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/animate.js"></script>
+	<!--import-->
+<nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-xs-8 col-sm-6 col-md-2 text-center logo">
+					<img src="img/logo.png" alt="logo">
+				</div>
+				<a href="#" id="pull"><img src="img/nav-icon.png" alt="nav"></a>	
+				<div class="col-md-8">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href=".">Trang chủ</a></li>
+						<li><a href="#gioithieu">Giới thiệu</a></li>
+						<li><a href="#phankhu">Phân khu</a></li>
+						<li><a href="#sanpham">Biệt thự</a></li>
+						<li><a href="javascript:void(0)">Vị trí</a></li>
+						<li><a href="#tienich">Tiện ích</a></li>
+						<li><a href="javascript:void(0)">Tin tức</a></li>
+						<li><a href="#lienhe">Liên hệ</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-md-2 text-center sdt">
+					<p class="text-uppercase">hotline</p>
+					<p><strong>0167. 7667. xxx</strong></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<script>
+	$(document).ready(function(){
+        var lastScroll=0;
+        $(window).scroll(function(){
+        	var nowScroll=$(this).scrollTop();
+            if(nowScroll<lastScroll && nowScroll != 0){
+            	$('#goTop').addClass('goTop');
+             	$('nav').addClass('fixed');
+            }else{
+            	$('#goTop').removeClass('goTop');
+            	$('nav').removeClass('fixed');
+            }
+            	lastScroll=nowScroll;
+            });
+        // ////////////////
+        $('#pull').click(function(){
+        	if($('.navbar-nav').hasClass('mClick')){
+        		$('.navbar-nav').removeClass('mClick');
+        	}
+        	else{
+        		$('.navbar-nav').addClass('mClick');
+        	}
+        });
+    });
+</script>
+<div id="header-slide" class="carousel slide" data-ride="carousel">
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="img/slide1.jpg" alt="slide">
+			<div class="carousel-caption">
+			</div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a class="left carousel-control" href="#header-slide" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#header-slide" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+<div class="gioithieu module" id="gioithieu">
+	<!--<img src="img/bg1.jpg" alt="bg" style="width: 50%; position: relative;">-->
+	<div class="container">
+		<div class="row">
+			<div class="item item1 col-md-6">
+				<div class="title text-center">
+					<h2 class="text-uppercase">hình ảnh dự án</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<div id="gioithieu-slide" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/img1.jpg" alt="slide">
+							<div class="carousel-caption">
+							</div>
+						</div>
+					</div>
+					<!-- Controls -->
+					<a class="left carousel-control" href="#gioithieu-slide" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#gioithieu-slide" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+			<div class="item item2 col-md-6">
+				<div class="title text-center">
+					<h2 class="text-uppercase">tổng quan dự án</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<div class="content">
+					<p>Vinhomes Riverside The Harmony là phân khu mới nhất thuộc tổng thể khu độ thị sinh thái đẳng cấp duy nhất giữa lòng Hà Nội – Vinhomes Riverside. Không chỉ kế thừa giá trị cốt lõi của tổng thể khu đô thị Vinhomes Riverside, Vinhomes Riverside The Harmony còn sở hữu các phong cách kiến trúc đa dạng và hệ thống tiện ích vượt trội, hứa hẹn sẽ trở thành nơi an cư lý tưởng của những chủ nhân tinh hoa.</p><br>
+					<p>Tổng diện tích: 97,6 ha</p><br>
+					<p>Diện tích công viên và hồ điều hòa: Rộng 12,4ha</p><br>
+					<p>Mật độ xây dựng: 21%</p><br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--gioithieu-->
+<div class="module2 module">
+	<div class="container">
+		<div class="row">
+			<div class="item item3 col-md-6">
+				<div class="title text-center">
+					<h2 class="text-uppercase">vị trí cửa ngõ</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<div class="content">
+					<p>Vinhomes Riverside được xây dựng trên địa giới của 3 phường trung tâm quận Long Biên: Việt Hưng, Phúc Lợi và Giang Biên. Từ dự án, cư dân có thể kết nối linh hoạt với trung tâm Hà Nội cũng như di chuyển đến các tỉnh lân cận như, Hải Dương, Hải Phòng, Hưng Yên, Bắc Ninh…bằng hệ thống giao thông đường bộ, đường cao tốc trên cao hiện đại.</p>
+					<p>Cách Hồ Hoàn Kiếm 6,5km</p>
+					<p>Cách siêu thị Aeon Mall 1km</p>
+					<p>Cách công viên IT PARK 800m</p>
+					<p>Cách sân bay long biên 700m</p>
+					<p>Tiện di chuyển đến các tỉnh lân cận như, Hải Dương, Hải Phòng, Hưng Yên, Bắc Ninh..</p>
+				</div>
+			</div>
+			<div class="item item4 col-md-6">
+				<img src="img/map.png" alt="map">
+			</div>
+		</div>
+	</div>
+</div>
+<!--gioithieu2-->
+<div class="phankhu module" id="phankhu">
+	<div class="container">
+		<div class="row">
+			<div class="title text-center">
+				<h2 class="text-uppercase">Phân khu vinhomes</h2>
+				<img src="img/line.png" alt="line">
+			</div>
+			<p class="text-center">Mang ý nghĩa về thành phố lãng mạn bên sông, Vinhomes Riverside The Harmony hay còn có tên gọi đầy nghệ thuật Vinhomes Riverside The Harmony chính là bản giao hưởng tuyệt vời giữa thiên nhiên và con người. Dạo bước vào khu đô thị, bạn sẽ có những cảm nhận chân thật nhất về một miền xanh thuần khiết, được lạc vào thế giới của những loài hoa đẹp nhất dọc mỗi con đường.</p>
+			<div class="same-content">
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Phân khu-->
+<div class="sanpham module" id="sanpham">
+	<div class="container">
+		<div class="row">
+			<div class="title text-center">
+				<h2 class="text-uppercase">Sản phẩm vinhomes</h2>
+				<img src="img/line.png" alt="line">
+			</div>
+			<div class="same-content">
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div><div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div><div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="box">
+						<img src="img/img1.jpg" alt="img" class="image">
+					</div>
+					<strong class="text-uppercase">khu nguyệt quế</strong>
+					<p>Con đường danh vọng và niềm tin chiến thắng</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--sản phẩm-->
+<div class="tienich module" id="tienich">
+	<div class="container">
+		<div class="row">
+			<div class="title text-center">
+				<h2 class="text-uppercase">Tiện ích 5 sao</h2>
+				<img src="img/line.png" alt="line">
+			</div>
+			<div class="content">
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+				<div class="col-sm-6 col-md-4 item paddingleft">
+					<div class="box">
+						<img src="img/tienich1.jpg" alt="tienich" class="image">
+					</div>
+					<p class="text-uppercase">bể bơi vinhomes</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--tiện ích-->
+<div class="module2 module" id="lienhe">
+	<div class="container">
+		<div class="row">
+			<div class="md-left text-center col-sm-6 col-md-6">
+				<div class="title text-center">
+					<h2 class="text-uppercase">Đăng ký nhận thông tin</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<p>Tải ngay bộ tài liệu Vinhomes The Harmony chính thức từ chủ đầu tư Vinhomes bao gồm mặt bằng tổng thể, mặt bằng căn hộ, hình ảnh căn hộ mẫu, bảng giá, hợp đồng mẫu.</p>
+				<form>
+			        <div class="form-group">
+			            <input type="email" class="form-control text-center" placeholder="Họ và Tên">
+			        </div>
+			        <div class="form-group">
+			            <input type="password" class="form-control text-center" placeholder="Email">
+			        </div>
+			        <div class="form-group">
+			            <input type="password" class="form-control text-center" placeholder="Phone">
+			        </div>
+			        <button type="submit" class="btn btn-primary">Đăng Ký Ngay</button>
+			    </form>
+		    </div>
+		    <div class="md-right text-center col-sm-6 col-md-6">
+		    	<div class="title text-center">
+					<h2 class="text-uppercase">bảng giá và chính sách bán hàng</h2>
+					<img src="img/line.png" alt="line">
+				</div>
+				<p>Vinhomes Riverside The Harmony có đầy đủ thông tin về mặt bằng – chính sách – giá bán. Quý khách vui lòng liên hệ bộ phận Kinh doanh Vinhomes The Harmony để được cung cấp thông tin nhanh nhất</p>
+				<p><b>Hỗ trợ tư vấn chuyên sâu - cập nhật những thông tin mới nhất:</b></p>
+				<p><b>Hotline hỗ trợ khách hàng : 0986.989.626</b></p>
+		    </div>
+		</div>
+	</div>
+</div>
+<!--module2-->
+<div class="uuthe module">
+	<div class="container">
+		<div class="row">
+			<div class="title text-center">
+				<h2 class="text-uppercase">6 ƯU THẾ NỔI BẬT CỦA VINHOMES THE HARMONY</h2>
+				<img src="img/line.png" alt="line">
+			</div>	
+			<div class="content col-md-12">
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderbottom borderright paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-snowflake-o" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">vị trí vượng lộc đắc tài</strong>
+						<p>Tọa lạc tại cửa ngõ phía đông bắc Thủ đô, Vinhomes Riverside là một trong những khu đô thị sinh thái có vị trí đẹp và tiện lợi. Từ đây có thể dễ dàng kết nối linh hoạt với các cụm công trình trọng điểm của thành phố.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderbottom paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-superpowers" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">khu đô thị sông thái sông nước</strong>
+						<p>Được quy hoạch trên diện tích 183,5 ha, Vinhomes Riverside có mật độ xây dựng lý tưởng khi dành tới 60 ha cho không gian chung (cây xanh, công viên, mặt nước) và gần 50 ha cho hạ tầng giao thông</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderbottom borderright paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-anchor" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">phong thủy vượng lộc đắc tài</strong>
+						<p>Các khu biệt thự được bố trí trên những “bán đảo” nhân tạo, xen kẽ giữa vườn cây trải rộng và được ôm trọn bởi hệ thống kênh đào xanh mát. Đây chính là thế đất “vượng lộc – đắc tài”, mang tới vận hội tốt đẹp.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderbottom paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-ship" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">giá trị cuộc sống hoàn hảo nhất</strong>
+						<p>Là cư dân Vinhomes Riverside, đồng nghĩa với quyền thưởng thức phong cách sống đỉnh cao ngay bên hiên nhà mình: khu mua sắm, khu thể thao, hệ thống trường học,vui chơi giải trí vui chơi giải trí…</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item borderright paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-gg" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">cộng đồng dân cư trí thức cao</strong>
+						<p>Dù mới đi vào vận hành khoảng 4 năm nhưng Vinhomes Riverside giai đoạn 1 đã hình thành cộng đồng cư dân văn minh, thân thiện và năng động.Riverside thành điểm đến lý tưởng cho các hoạt động văn hóa lớn.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 item paddingright">
+					<div class="col-xs-4 col-md-2 box-icon padding">
+						<i class="fa fa-internet-explorer" aria-hidden="true"></i>
+					</div>
+					<div class="col-xs-8 col-md-10 box-content paddingright">
+						<strong class="text-uppercase">chủ đầu tư uy tín tiềm lực mạnh</strong>
+						<p>Vinhomes Riverside được kiến tạo bởi chủ đầu tư Vingroup – thương hiệu số 1 Việt Nam về BĐS và là tập đoàn có chiến lược phát triển bền vững và năng động, có tiềm lực hội nhập quốc tế để vươn lên tầm khu vực và thế giới.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--uuthe-->
+<a class="btninfo btnsdt">
+	<div class="nd">
+		<strong class="text-uppercase">hotline</strong>
+		<p>0167. 7667. 020</p>
+	</div>
+	<div class="icon">
+		<i class="fa fa-phone" aria-hidden="true"></i>
+	</div>
+	
+</a>
+<a class="btninfo btndown">
+	<div class="nd">
+		<strong class="text-uppercase">download</strong>
+		<p>Tài liệu</p>
+	</div>
+	<div class="icon">
+		<i class="fa fa-arrow-down" aria-hidden="true"></i>
+	</div>
+	
+</a>
+<a class="btninfo btnin">
+	<div class="nd">
+		<strong class="text-uppercase">info</strong>
+		<p>Thông Tin</p>
+	</div>
+	<div class="icon">
+		<i class="fa fa-info" aria-hidden="true"></i>
+	</div>
+	
+</a>
+<footer class="module">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-md-4 item1">
+				<h3 class="text-uppercase">lý do chọn chúng tôi</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				<p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting</p>
+				<p>remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+			</div>
+			<div class="col-sm-4 col-md-4 item2 text-center">
+				<h3 class="text-uppercase">đơn vị bán hàng</h3>
+				<img src="img/logo.png" alt="logo">
+				<p class="text-left">Địa chỉ: Tân Thới Nhất, Q12, HCM</p>
+				<p class="text-left">SĐT: 0167. 7667. xxx</p>
+				<p class="text-left">Email: Calhvoldemort@gmail.com</p>
+			</div>
+			<div class="col-sm-4 col-md-4 item3">
+				<h3 class="text-uppercase">bản đồ dự án</h3>
+				<img src="img/map2.jpg" alt="map">
+			</div>
+			<div class="col-sm-12 col-md-12">
+				<p>Copyright &copy 2018, Design by Ace</p>
+				<a class="go goTop" id="goTop" title="Đến đầu trang" onclick="$('html,body').animate({scrollTop:0})"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+>>>>>>> havm
+</html>
