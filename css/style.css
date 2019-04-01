@@ -1,0 +1,193 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{color: #FFF; font-family: 'Roboto', sans-serif;;overflow-x: hidden;background: #0f3b22;}
+ul{list-style-type: none;}
+img{max-width: 100%;vertical-align: middle;}
+.image:hover {-webkit-transform:scale(1.2); transform:scale(1.2);}
+.image {-webkit-transition: all 0.7s ease; transition: all 0.7s ease;}
+.nopadding {padding: 0 !important;margin: 0 !important;}
+.padding{padding-right: 0; padding-left: 0;}
+.paddingleft{padding-left: 0;}
+.paddingright{padding-right: 0;}
+.module{padding: 50px 0;}
+.box{overflow: hidden;}
+/*.container{border-left: 1px solid blue;border-right: 1px solid blue;overflow: hidden;}*/
+a,a:hover,a:focus{text-decoration: none;cursor: pointer;}
+.goTop{display: block!important;}
+.go {
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+    background: #ecb849;
+    border-radius: 50%;
+    color: #0f3b22;
+    padding: 6px 11px;
+    border: 0;
+    line-height: normal;
+    font-size: 136%;
+    display: none;
+    z-index: 10000;
+}
+.fixed{position: fixed;z-index: 1000;left: 0;right: 0;margin-left: auto;background-color: #0f3b22;top:0;}
+#pull{display: none;}
+.paused {-ms-animation-play-state:paused; -o-animation-play-state:paused; -moz-animation-play-state:paused; -webkit-animation-play-state:paused; animation-play-state: paused; }
+.btninfo{
+  display: inline-flex;
+  background-color: #0f3b22;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 30%;
+  padding: 5px;
+  border-radius: 0 25px 25px 0;
+  width: 160px;
+      left: -110px;
+    transition: all 0.5s ease;
+}
+.btninfo:hover{left: 0;}
+.btndown{top: 38.3%;}
+.btnin{top: 46.6%;}
+.btninfo:hover{color: #fff;}
+.btninfo>.nd{margin-right: 10px;}
+.btninfo>.nd>p{margin: 0;}
+.btninfo>.icon{margin-left: auto;}
+.btninfo>.icon>i{font-size: 20px; width: 39px; height: 39px; border: 2px solid #fff; line-height: 34px; text-align: center; border-radius: 50%; }
+/*-----#0f3b22----#ecb849-----------------------------------*/
+h2{font-size: 25px;}
+.module{padding: 30px 0;}
+.title{margin-bottom: 20px;}
+/*-----#0f3b22----#ecb849-----------------------------------*/
+.logo>img{width: 80%;}
+nav .navbar-nav{margin-top: 10px;}
+nav .navbar-nav>li>a{padding-top: 20px;padding-bottom: 20px;color: #fff;}
+.sdt{margin-top: 13px;}
+nav .nav>li>a:focus,nav .nav>li>a:hover{background-color: transparent;}
+nav .nav>li.active>a{border-bottom: 2px solid #ecb849;}
+nav .navbar-nav a:hover{color: #ecb849;border-bottom: 2px solid #ecb849;}
+/*-----#0f3b22----#ecb849-----------------------------------*/
+.gioithieu{
+    background: url(../img/bg1.jpg);
+    background-position: left;
+    background-size: 50%;
+    background-repeat: repeat-y;
+}
+/*-----#0f3b22----#ecb849-----------------------------------*/
+.module2 .item4{padding-top: 30px;}
+/*-----#0f3b22----#ecb849-----------------------------------*/
+.phankhu{background-color: #fff;color: black;}
+.phankhu h2{color: #0f3b22;}
+.same-content strong{color: #0f3b22;font-size: 17px}
+.same-content .box{margin-bottom: 15px;}
+.same-content p{margin-top: 15px;margin-bottom: 30px;}
+/*-----#0f3b22----#ecb849-----------------------------------*/
+.sanpham .same-content strong{color: #fff;}
+/*-----#0f3b22----#ecb849-----------------------------------*/
+.tienich{background-color: #fff;}
+.tienich h2{color: #0f3b22;}
+.tienich .content .item{margin-top: 10px;}
+.tienich .content .box{position: relative;}
+.tienich .content .box:before{
+  content: '';
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    top: 0;
+    transform: scale(1);
+    text-align: center;
+}
+.tienich .content .item:hover .box:before, .tienich .content .item:hover p, .tienich .content .item:hover p:before{transform: scale(0); }
+.tienich .content .item>p{
+      position: absolute;
+    top: 43%;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+.tienich .content .item>p:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 19%;
+    background: #fff;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*-----#0f3b22----#ecb849-----------------------------------*/
+.module2 .md-left>p{margin-bottom: 20px;}
+.module2 .md-right>p{margin-bottom: 25px;}
+/*-----#0f3b22----#ecb849-----------------------------------*/
+.borderright{border-right: 1px dashed #7c7c7d;}
+.borderbottom{border-bottom: 1px dashed #7c7c7d;}
+.uuthe{background-color: #fff;color: black;}
+.uuthe h2{color: #0f3b22;}
+.uuthe .content{margin-top: 15px;}
+.uuthe .box-icon{
+width: 70px;
+    height: 70px;
+    line-height: 73px;
+    border-radius: 50%;
+    background-color: #0f3b22;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
+.uuthe .box-icon>i{font-size: 26px; }
+.uuthe .box-content{padding: 15px 0 15px 15px;}
+.uuthe .box-content p{margin: 10px 0 0 0;}
+/*-----#0f3b22----#ecb849-----------------------------------*/
+footer h3{font-size: 20px;border: 1px solid #ecb849;
+    text-align: center;
+    padding: 7px 0;
+    margin-bottom: 25px;
+}
+footer .item2>p:nth-child(3){margin-top: 20px;}
+/* --------------------------------------------------------------------------------*/
+/* 480px */
+/* --------------------------------------------------------------------------------*/
+@media screen and (max-width: 480px){
+  .sdt, .btnin, .btndown{display: none;}
+  .gioithieu{background: unset;}
+  nav{position: relative!important;}
+  .navbar-nav{display: none;margin-top: 6em!important;text-align: right;float: right;
+    transition: all 0.6s ease;
+  }
+  .uuthe .item{border-right:0;}
+  #pull{display: block;
+    width: 13%;
+    position: relative;
+    float: left;
+    left: 10%;
+    top: 1.5em;
+  }
+  .mClick{display: block;}
+  nav .nav>li.active>a, nav .navbar-nav a:hover{border: 0;}
+}
+/* --------------------------------------------------------------------------------*/
+/* 768px */
+/* --------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px){
+  .sdt, .btnin, .btndown{display: none;}
+  .gioithieu{background: unset;}
+  nav{position: relative!important;}
+  .navbar-nav{display: none;margin-top: 6em!important;text-align: right;float: right; transition: all 0.6s ease; }
+  .uuthe .item{border-right:0;}
+  #pull{display: block; width: 13%; position: relative; float: left; left: 10%; top: 1.5em; }
+  .mClick{display: block;}
+  nav .nav>li.active>a, nav .navbar-nav a:hover{border: 0;}
+}
+/* --------------------------------------------------------------------------------*/
+/* 992px */
+/* --------------------------------------------------------------------------------*/
+@media screen and (max-width: 992px){
+  
+}
+/* --------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------*/
